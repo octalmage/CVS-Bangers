@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<title>CVS Bangers</title>
+	<style type="text/css">
+
+	body
+	{
+		background-color: #FFFF00;
+		margin: 0px; 
+		padding: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	#content
+	{
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	#content iframe
+	{
+		padding-bottom: 20px;
+	}
+
+	#airhornButton
+	{
+
+		margin: auto; 
+		left: 50%; 
+		color: white; 
+		background-color: red; 
+		overflow: hidden; 
+		width: 100px; 
+		height: 100px; 
+		border-radius: 50px;
+	}
+
+	#airhornButton span
+	{
+		position: relative;
+		top: 41%;
+		transform: translateY(-50%);
+	}
+
+	.fb-comments
+	{
+		margin-top:25px;
+	}
+
+
+	</style>
+
+	<script type="text/javascript" src="assets/js/howler.js"></script>
+
+	<script type="text/javascript">
+		$(document).on("ready", function()
+		{
+			var airhorn = new Howl({
+ 				urls: ['assets/sounds/airhorn.mp3']
+			})
+
+			$("#airhornButton").on("mousedown", function()
+			{
+				airhorn.play();
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<!-- Gross Facebook comment code. -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=524818667589853&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div id="content">
+		<iframe width="400" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/87515856&amp;auto_play=true&amp;hide_related=false&amp;visual=true"></iframe>
+	
+		<div id="airhornButton">
+			<span>Airhorn</span>
+		</div>
+
+		<div class="fb-comments" data-href="http://cvsbangers.com" data-width="600" data-numposts="10" data-colorscheme="light"></div>
+
+	</div>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 CVS Bangers
 ===========
 
-A website dedicated to the greatest mix of all time, [CVS bangers](https://soundcloud.com/hennessyyoungman/cvsbangers). 
+A website dedicated to the greatest mix of all time, [CVS BANGERS](https://soundcloud.com/hennessyyoungman/cvsbangers). 
 
 Feel free to add more sounds, mixes, or anything! 
 
